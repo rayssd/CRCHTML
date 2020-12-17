@@ -48,6 +48,8 @@
                         <a href="mailto:rayssd@hotmail.com">rayssd@hotmail.com</a>
                     </div>
                     <p class="lead mb-5">I am a Senior Escalation Engineer with 8 years of experience managing and supporting IT infrastructures for small/medium businesses and large enterprises in the healthcare sector. I enjoy problem-solving and have a geniune interest in cloud technologies. This website was built using a set of DevOps tools which I taught myself in my spare time. You can find more information in the <a class="nav-link js-scroll-trigger" href="#CRC" title = "Cloud Resume Challenge" style="display:inline">Cloud Resume Challenge</a> section.</p>
+                    <p>Page views: <span id="visitorCount"></span></p>
+                    <script src="js/VisitorCount.js"></script>
                     <div class="social-icons">
                         <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/raymond-hu-950b533b/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" target="_blank" href="https://github.com/rayssd"><i class="fab fa-github"></i></a>                                             
@@ -140,7 +142,32 @@
                         </li>
                         <li>
                             <i class="fa-li fa fa-check"></i>
-                            PowerShell | Python
+                            PowerShell
+                        </li>
+                        <p></p>                                        
+                    </ul>
+
+                    <div class="subheading mb-3">Knowledgeable About</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <i class="fa-li fa fa-check"></i>
+                            Programming: Python | C++
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-check"></i>
+                            CI/CD: GitHub | GitHub Actions
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-check"></i>
+                            Serverless Technologies: AWS API Gateway | AWS Lambda | AWS DynamoDB
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-check"></i>
+                            Infrastructure as Code: Terraform | Ansible
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-check"></i>
+                            Container Ochestration: Kubernetes
                         </li>
                         <p></p>                                        
                     </ul>
@@ -194,9 +221,14 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Cloud Resume Challenge</h2>
                     <ul class="fa-ul mb-0">
-                        This site is built following the requirements documented in <a href = "https://cloudresumechallenge.dev/instructions/">Cloud Resume Challenge</a>
-                        <p>This page has <span id="visitorCount">0</span> views</p>
-                        <script src="js/VisitorCount.js"></script>
+                        <p>This site is built following the requirements in the <a href = "https://cloudresumechallenge.dev/instructions/">Cloud Resume Challenge</a>.</p>
+                        <p>Here's a breakdown of the solutions stack:</p>
+                        <ul>
+                            <li>AWS CloudFront -> AWS S3 Static Website -> AWS API Gateway -> AWS Lambda -> AWS DynamoDB</li>
+                            <li>CI/CD: GitHub & GitHub Actions are used to store code for HTML, Python on Lambda & Terraform and automate deployment on code changes</li>
+                            <li>Infrastructure as Code: Terraform</li>
+                        </ul>
+                        
                 </div>
             </section>
         </div>
