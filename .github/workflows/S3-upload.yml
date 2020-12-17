@@ -33,4 +33,4 @@ jobs:
         with:
           args: --acl public-read --follow-symlinks --delete
           env:
-            AWS_S3_BUCKET: "my-cloud-resume"
+            AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
